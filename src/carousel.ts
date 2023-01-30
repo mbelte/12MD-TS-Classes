@@ -100,7 +100,7 @@ class Carousel {
         slide.classList.remove('js-carousel-active')
     }
 
-    createImage(slide: HTMLDivElement, img: string, title: string) {
+    createImage(slide: HTMLDivElement | HTMLLIElement, img: string, title: string) {
         this.slideImg = document.createElement('img')
         slide.appendChild(this.slideImg)
         this.slideImg.classList.add('carousel__img')
